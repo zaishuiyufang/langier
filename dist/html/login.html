@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/login.css" />
+	</head>
+
+	<body>
+		<header></header>
+		<p>登录</p>
+		<div id="box">
+			<form id="form">
+				<ul>
+					<li><input type="text" class="inp" id="username" value="" placeholder="用户名" />
+						<div>
+							用户名不能包含特殊字符（只能是数字字母下划线)
+						</div>
+					</li>
+					<li><input type="password" class="inp" id="pwd" value="" placeholder="密码" />
+						<div>
+							密码要在六位以上
+						</div>
+					</li>
+
+				</ul>
+
+				<button id="btn">登录</button>
+				<a class="a1" href="javascript:;">找回密码</a>
+				<a class="a2" href="/html/register.html">注册</a>
+			</form>
+			<img src="/images/login-banner.jpg">
+		</div>
+		<footer></footer>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/login.js"></script>
+	</body>
+
+</html>

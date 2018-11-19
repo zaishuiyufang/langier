@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+	</head>
+	
+	<body>
+		<header></header>
+		<div class="banner">
+			<img src="/images/join-titbox-bg.jpg" />
+			<p>注册会员</p>
+			<span >注册兰芝会员资格并享有会员特权</span>
+			<img src="/images/join-titbox-item.png" class="img1"/>
+		</div>
+		<div class="bitian">
+			<p>必填</p>
+		</div>
+		<div class="main">
+		<div id="box">
+			<form id="form">
+				<dl>
+					<dt>姓名</dt>
+					<dd><input type="text" class = "inp" id="username" value="" placeholder="您的用户名" />
+				<div>
+					用户名不能包含特殊字符（只能是数字字母下划线)
+				</div></dd>
+				</dl>
+				<dl>
+					<dt>手机号码</dt>
+					<dd><input type="text" class = "inp" id="tel" value="" placeholder="输入手机号码" />
+				<div>
+					请输入正确的电话号码
+				</div></dd>
+				</dl>
+				<dl>
+					<dt>电子邮箱</dt>
+					<dd><input type="text" class = "inp" id="imail" value="" placeholder="输入邮箱地址" />
+				<div>
+					请输入正确的邮箱格式
+				</div></dd>
+				</dl>
+				<dl>
+					<dt>设置密码</dt>
+					<dd><input type="password" class = "inp" id="pwd" value="" placeholder="输入密码" />
+				<div>
+					密码要在六位以上
+				</div></dd>
+				</dl>
+				<dl>
+					<dt>确认密码</dt>
+					<dd><input type="password" class = "inp" id="repwd" value="" placeholder="再次输入密码" />
+				<div>
+					两次密码必须输入一致
+				</div></dd>
+				</dl>
+				
+				<p class="kexuan">
+					可选项目
+				</p>
+				<p class="tiaokuan"><input type="checkbox" value="" id="check" />
+				我已阅读并同意<b>兰芝的使用条款</b>及<b>隐私政策</b>的全部内容</p>
+				<button id="btn">
+				<img src="/images/btn-complete-off.gif" id="complete-off"/>
+				<img src="/images/btn-complete.gif" id="complete"/>
+				立即注册
+				</button>
+				
+				
+			</form>
+		</div>
+		</div>
+		<footer></footer>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/register.js"></script>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/list.css" />
+	</head>
+
+	<body>
+		<header></header>
+		<div class="main">
+			<p>产品</p>
+			<ul class="ul">
+				<li class="ac">
+					<a href="javascript:;">护肤</a>
+				</li>
+				<li>
+					<a href="javascript:;">彩妆</a>
+				</li>
+				<li>
+					<a href="javascript:;">男士</a>
+				</li>
+			</ul>
+
+			<div class="box">
+				<div class="left">
+					<ul class="ul1">
+						<li>过滤条件</li>
+						<li>产品类型</li>
+						<li>全部</li>
+						<li>洁面</li>
+						<li>细肤水</li>
+						<li>保湿乳</li>
+						<li>精华</li>
+						<li>面霜</li>
+						<li>面膜</li>
+						<li>喷雾</li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="ul2">
+						<li>
+							<a href="javascript:;">排序方式</a>
+						</li>
+						<li>
+							<a href="javascript:;">价格从低到高</a>
+						</li>
+						<li>
+							<a href="javascript:;">价格从高到低</a>
+						</li>
+						<li>
+							<a href="javascript:;">评分从高到低</a>
+						</li>
+					</ul>
+					<div class="list">
+						<ul id="proList1">
+							<script type="text/html" id="pro-template1">
+									{{each products1 item i}}
+									<li>
+										<a href="/html/detail.html?id={{ item.id }}">
+										<div class="pic1"><img src="{{ item.image }}" alt=""></div>
+										<p class="name">{{ item.name }}</p>
+										<div class="pic2">
+											<div class="heartbg">
+												<div class="heart"></div>
+											</div>
+										</div>
+
+										<p class="price">{{ "￥"+item.price }}</p>
+										</a>
+									</li>
+								{{/each}}
+							</script>
+						</ul>
+							<ul id="proList2">
+								<script type="text/html" id="pro-template2">
+									{{each products2 item i}}
+									
+									<li>
+										<div class="pic1"><img src="{{ item.img }}" ></div>
+										<p class="name">{{ item.name }}</p>
+										<div class="pic2">
+											<div class="heartbg">
+												<div class="heart"></div>
+											</div>
+										</div>
+
+										<p class="price">{{ "￥"+item.price }}</p>
+									</li>
+									{{/each}}
+								</script>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<script src="/libs/require/require.js" data-main="/js/list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

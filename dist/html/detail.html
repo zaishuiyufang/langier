@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/detail.css" />
+	</head>
+
+	<body>
+		<header></header>
+		<div class="main" id="main">
+			<script type="text/html" id="detail-template">
+				{{each details item i}}
+				<div class="left">
+					<img src="{{ item.image }}" />
+				</div>
+				<div class="right">
+
+					<p class="p1">{{ item.name }}</p>
+					<p class="p2">{{ item.english }}</p>
+					<div class="p3">
+						<dl>
+							<dt>0</dt>
+							<dd>
+								<div class="heartbg">
+									<div class="heart"></div>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd></dd>
+						</dl>
+						<dl>
+							<dt>0</dt>
+							<dd>用户评论</dd>
+						</dl>
+
+					</div>
+					<p class="p4">{{ item.explain }}</p>
+					<p class="p5"><span>净重</span>{{ item.weight }}</p>
+					<p class="p6"><span>价格</span>￥{{ item.price }}</p>
+					<a href="/html/cart.html" id="detail-cart">立即购买</a>
+
+				</div>
+				{{/each}}
+			</script>
+		</div>
+		<footer></footer>
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/detail.js"></script>
+
+	</body>
+
+</html>
